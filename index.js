@@ -13,6 +13,5 @@ xhr.onload = function() {
     let flag1 = country.filter(y => {
         return (names.value == y.name)
     })
-    flag.innerHTML = `<img src="${flag1[0].flag}">`
-}
+ }
 xhr.send()
