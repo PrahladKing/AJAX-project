@@ -5,13 +5,10 @@ xhr.onload = function() {
     let flag = document.getElementById('flag')
     let country = JSON.parse(this.response)
     let name1 = country.map(x => {
-        return x.name
+        return x.img
     })
     for (x of name1) {
-        names.innerHTML += `<option value="${x}"> ${x} </option>` 
+        names.innerHTML += `<img src="${x}">` 
     }
-    let flag1 = country.filter(y => {
-        return (names.value == y.name)
-    })
 }
 xhr.send()
