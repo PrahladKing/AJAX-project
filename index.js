@@ -8,7 +8,7 @@ xhr.onload = function() {
         return x.img
     })
     for (x of name1) {
-        names.innerHTML += `<img src="${x}">` 
+        flag.innerHTML += `<img src="${x}">` 
     }
 }
 xhr.send()
